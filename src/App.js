@@ -8,12 +8,15 @@ function App() {
     likes += 1;
     console.log(likes)
   }
-
+    function decrement(){
+        likes -= 1;
+        console.log(likes)
+    }
   return (
     <div className="App">
       <h1>{likes}</h1>
-      <button onClick={() => likes += 1}>Increment</button>
-      <button onClick={() => likes -= 1}>Decrement</button>
+      <button onClick={() => increment()}>Increment</button>
+      <button onClick={() => decrement()}>Decrement</button>
     </div>
   );
 }
